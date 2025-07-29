@@ -1,127 +1,399 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
-<head>
+    <head>
+        <meta charset="utf-8">
+        <title>Home - De Precious Rubies Hub</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>De Precious Rubies Hub</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="img/logo/favicon.ico">
+        <link rel="apple-touch-icon" href="img/logo/apple-touch-icon.png">
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
 
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script defer src="js/fontawesome/all.min.js"></script>
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
 
-</head>
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<body id="top">
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
 
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
         </div>
-    </div>
+        <!-- Spinner End -->
 
-    <!-- site header
-    ================================================== -->
-    <header class="s-header">
 
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <!-- <img src="images/logo.svg" alt="Homepage"> -->
-                <h3 style="color: bisque;">De Precious Rubies Hub</h3>
-            </a>
+        <!-- Navbar start -->
+        <div class="container-fluid fixed-top px-0">
+            <div class="container px-0">
+                <div class="topbar">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-8">
+                            <div class="topbar-info d-flex flex-wrap">
+                                <a href="#" class="text-light me-4"><i class="fas fa-envelope text-white me-2"></i>info@depreciousrubies.org</a>
+                                <a href="#" class="text-light"><i class="fas fa-phone-alt text-white me-2"></i>+233246789930 / +233540498378</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="topbar-icon d-flex align-items-center justify-content-end">
+                                <a href="#" class="btn-square text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn-square text-white me-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn-square text-white me-2"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn-square text-white me-2"><i class="fab fa-pinterest"></i></a>
+                                <a href="#" class="btn-square text-white me-0"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-light bg-light navbar-expand-xl">
+                    <a href="#" class="navbar-brand ms-3">
+                        <h1 class="text-primary display-5">De Precious Rubies Hub</h1>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-light" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto">
+                            <a href="#" class="nav-item nav-link active">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="what-we-do.html" class="nav-item nav-link">What We Do</a>
+                            <a href="events.html" class="nav-item nav-link">Events</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <div class="d-flex align-items-center flex-nowrap pt-xl-0" style="margin-left: 15px;">
+                            <a href="donation.html" class="btn-hover-bg btn btn-primary text-white py-2 px-4 me-3">Donate Now</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
+        <!-- Navbar End -->
 
-        <div class="header-email">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path
-                    d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339-2.17 2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z" />
-            </svg>
-            <!-- <a href="mailto:admin@havilah-med.com">admin@havilah-med.com</a> -->
+        
+       <!-- Carousel Start -->
+        <div class="container-fluid carousel-header vh-100 px-0">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="img/homepage/carousel-1.jpg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">De Precious Rubies Hub</h4>
+                                <h1 class="display-1 text-capitalize text-white mb-4">Empowering People</h1>
+                                <p class="mb-5 fs-5">
+                                    Empowering a world where every individual can thrive and reach 
+                                    their full potential, free from suffering and inequity. 
+                                </p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="#">Join With Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/homepage/carousel-2.jpeg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">De Precious Rubies Hub</h4>
+                                <h1 class="display-1 text-capitalize text-white mb-4">Improving life</h1>
+                                <p class="mb-5 fs-5">
+                                    Improving human life and health through innovation and technology.
+                                </p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="#">Join With Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/homepage/carousel-3.jpeg" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">De Precious Rubies Hub</h4>
+                                <h1 class="display-1 text-capitalize text-white mb-4">Fostering Good Values</h1>
+                                <p class="mb-5 fs-5">
+                                    Foster a culture of empathy, inclusivity, and respect for human rights
+                                </p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="#">Join With Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
+        <!-- Carousel End -->
 
-    </header> <!-- end s-header -->
 
-    <!-- intro
-    ================================================== -->
-    <section id="intro" class="s-intro s-intro--particles">
 
-        <div id="particles-js" class="intro-particles"></div>
 
-        <div class="grid-overlay">
-            <div></div>
+
+        <!-- About Start -->
+        <div class="container-fluid about  py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-xl-5">
+                        <div class="h-100">
+                            <img src="img/logo/logo.png" class="img-fluid w-100 h-100" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-xl-7">
+                        <h5 class="text-uppercase text-primary">About Us</h5>
+                        <h1 class="mb-4">Preamble</h1>
+                        <p class="fs-5 mb-4">
+                            Moved by the conviction and the desire to promote, improve and protect human life 
+                            and health through productive relief and developmental interventions while upholding 
+                            human dignity coupled with other prudent societal issue needing the attention of 
+                            stakeholders necessitated the establishment of “De Precious Rubies Hub” which shall be 
+                            the official name of the Organization.
+                        </p>
+                        <div class="tab-class bg-secondary p-4">
+                            <ul class="nav d-flex mb-2">
+                                <li class="nav-item mb-3">
+                                    <a class="d-flex py-2 text-center bg-white active" data-bs-toggle="pill" href="#tab-1">
+                                        <span class="text-dark" style="width: 150px;">About</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-3">
+                                    <a class="d-flex py-2 mx-3 text-center bg-white" data-bs-toggle="pill" href="#tab-2">
+                                        <span class="text-dark" style="width: 150px;">Mission</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-3">
+                                    <a class="d-flex py-2 text-center bg-white" data-bs-toggle="pill" href="#tab-3">
+                                        <span class="text-dark" style="width: 150px;">Vision</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="tab-1" class="tab-pane fade show p-0 active">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex">
+                                                <div class="text-start my-auto">
+                                                    <p class="mb-4">
+                                                        The organization shall be non-political, voluntary and Non-Profit 
+                                                        base with no desire of undertaking any business with the aim of profit.
+                                                    </p>
+                                                    <div class="d-flex align-items-center justify-content-start">
+                                                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="about.html">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab-2" class="tab-pane fade show p-0">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex">
+                                                <div class="text-start my-auto">
+                                                    <p class="mb-4">
+                                                        "Empowering a world where every individual can thrive and reach their full potential, 
+                                                        free from suffering and inequity."
+                                                    </p>
+                                                    <div class="d-flex align-items-center justify-content-start">
+                                                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab-3" class="tab-pane fade show p-0">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex">
+                                                <div class="text-start my-auto">
+                                                    <p class="mb-4">
+                                                        Unleashing Potential, Sparking Transformation - At Precious Rubies 
+                                                        Hub, we believe that every individual has unique gifts and talents waiting to be discovered. 
+                                                        Our mission is to help unearth these gems and empower individuals to live their best lives.
+                                                    </p>
+                                                    <div class="d-flex align-items-center justify-content-start">
+                                                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="row intro-content">
-
-            <div class="column">
-
-                <div class="intro-content__text">
-
-                    <h3>
-                        Coming Soon
-                    </h3>
-
-                    <h1>
-                        Get ready everyone. <br>
-                        We are currently <br>
-                        working on <br>
-                        our website.
-                    </h1>
-
-                </div> <!-- end intro-content__text -->
-
-            </div> <!-- end column -->
-
-        </div> <!--  end intro-content -->
+        <!-- About End -->
 
 
-        <ul class="intro-social">
-            <li><a href="#0"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="#0"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-        </ul> <!-- end intro social -->
+        <!-- What We Do Start -->
+        <div class="container-fluid service py-5 bg-light">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5" style="max-width: 800px;">
+                    <h5 class="text-uppercase text-primary">What we do</h5>
+                    <h1 class="mb-0">The organization has projects clustered into three main divisions/departments.</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 col-xl-4">
+                        <div class="service-item">
+                            <img src="img/homepage/parenting-hub.jpg" class="img-fluid w-100" alt="Image">
+                            <div class="service-link">
+                                <a href="what-we-do.html#parenting-hub" class="h4 mb-0">Parenting Hub</a>
+                            </div>
+                        </div>
+                        <p class="my-4">
+                            This division looks at wholistic approach to “Effective Parenting”. The current trend 
+                            of ineffective parenting coupled with the Breakdown of Social Order, 
+                             Social Media Paradigm, Peer Influence.....
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-4">
+                        <div class="service-item">
+                            <img src="img/homepage/journey-to-significance.jpg" class="img-fluid w-100" alt="Image">
+                            <div class="service-link">
+                                <a href="what-we-do.html#journey-to-significance-hub" class="h4 mb-0">Journey To Significance Hub</a>
+                            </div>
+                        </div>
+                        <p class="my-4">
+                           I realized most of the children who get into various addictions fall within the range of 
+                           children entering either the high school or universities. I have seen very great kids 
+                           with wonderful talents turning....
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-4">
+                        <div class="service-item">
+                            <img src="img/homepage/broken-pencil.jpg" class="img-fluid w-100" alt="Image">
+                            <div class="service-link">
+                                <a href="what-we-do.html#broken-pencil-hub" class="h4 mb-0">Broken Pencil Hub</a>
+                            </div>
+                        </div>
+                        <p class="my-4">
+                            "Hope is the spark that ignites the flame of resilience, and it is the foundation upon 
+                            which a brighter future is built." Yet, for many individuals and communities, hope....
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="what-we-do.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- What We Do End -->
 
-        <div class="intro-scroll">
-            <a href="#" class="scroll-link smoothscroll">
-                De Precious Rubies Hub
-            </a>
-        </div> <!-- end intro scroll -->
 
-    </section> <!-- end s-intro -->
+        <!-- Footer Start -->
+        <div class="container-fluid footer bg-dark text-body py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">De Precious Rubies Hub</h4>
+                            <p class="mb-4 text-white">
+                                De Precious Rubies Hub is a non-profit organization dedicated to empowering individuals 
+                                and communities through innovative programs and initiatives. Our mission is to foster 
+                                positive change, promote well-being, and create opportunities for growth and development.
+                            </p>
+                            <p class="mb-0 text-white">
+                                <i class="fas fa-phone me-2"></i> Phone: +233246789930 / +233540498378<br>
+                                <i class="fas fa-envelope me-2"></i> Email: info@depreciousrubieshub.com<br>
+                                <i class="fas fa-location-arrow me-2"></i> Address: 123 Street, City, Country<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                        <div class="footer-item d-flex flex-column text-white">
+                            <h4 class="mb-4 text-white">Quick Links</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Causes</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Events</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> What We Do</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
 
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/particle-settings.js"></script>
-    <script src="js/main.js"></script>
 
-</body>
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-4 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#"><i class="fas fa-copyright text-light me-2"></i>
+                            De Prescious Rubies Hub</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-pinterest"></i></a>
+                            <a href="#" class="btn-hover-color btn-square text-white me-0"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end text-body">
+                        By <a class="border-bottom" href="https://yohananconsult.github.io">Yohanan Consult</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
